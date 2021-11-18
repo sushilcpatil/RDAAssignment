@@ -12,7 +12,7 @@ var EmployeeComponent = /** @class */ (function () {
     function EmployeeComponent(employeeDataService) {
         this.employeeDataService = employeeDataService;
     }
-    EmployeeComponent.prototype.getEmplyeeName = function () {
+    EmployeeComponent.prototype.getEmployeeName = function () {
         var _this = this;
         this.employeeDataService.getEmployeeName(this.employeeName).subscribe(function (res) {
             _this.fetchedEmployeeName = res;

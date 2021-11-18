@@ -13,7 +13,7 @@ export class EmployeeComponent {
   employeeName: string;
   fetchedEmployeeName: string;
 
-  getEmplyeeName() {
+  getEmployeeName() {
     this.employeeDataService.getEmployeeName(this.employeeName).subscribe((res) => {
       this.fetchedEmployeeName = res;
       console.log(res);
