@@ -18,7 +18,7 @@ export class EmployeeDataService extends DataService {
     super(http, router, configService);
   }
 
-  getEmployeeName(employeeName: string): Observable<string> {
-    return this.get(`Employee/EmployeeName?name=${employeeName}`);
+  getEmployeeName(employeeName: string): Promise<string> {
+    return this.get(`Employee/EmployeeName?name=${employeeName}`).toPromise();
     }
   }

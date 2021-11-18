@@ -14,7 +14,7 @@ export class EmployeeComponent {
   fetchedEmployeeName: string;
 
   getEmployeeName() {
-    this.employeeDataService.getEmployeeName(this.employeeName).subscribe((res) => {
+    this.employeeDataService.getEmployeeName(this.employeeName).then((res) => {
       this.fetchedEmployeeName = res;
       console.log(res);
       } 

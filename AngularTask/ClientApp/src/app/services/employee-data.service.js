@@ -34,7 +34,7 @@ var EmployeeDataService = /** @class */ (function (_super) {
         return _this;
     }
     EmployeeDataService.prototype.getEmployeeName = function (employeeName) {
-        return this.get("Employee/EmployeeName?name=".concat(employeeName));
+        return this.get("Employee/EmployeeName?name=".concat(employeeName)).toPromise();
     };
     EmployeeDataService = __decorate([
         (0, core_1.Injectable)({

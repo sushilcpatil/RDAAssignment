@@ -14,7 +14,7 @@ var EmployeeComponent = /** @class */ (function () {
     }
     EmployeeComponent.prototype.getEmployeeName = function () {
         var _this = this;
-        this.employeeDataService.getEmployeeName(this.employeeName).subscribe(function (res) {
+        this.employeeDataService.getEmployeeName(this.employeeName).then(function (res) {
             _this.fetchedEmployeeName = res;
             console.log(res);
         });
